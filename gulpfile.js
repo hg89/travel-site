@@ -15,7 +15,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     watch('./app/assets/index.html', function() {
-        gulp.setMaxListeners('html')
+        gulp.start('html')
     })
 
     watch('./app/assets/styles/**/*.css', function() {
